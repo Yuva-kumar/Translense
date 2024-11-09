@@ -1,0 +1,105 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sidebar {
+  background-color: #f7c797;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  color: #8a2c2d;
+}
+
+.sidebar ul li.active {
+  font-weight: bold;
+} */
+
+
+
+/* App.css */
+.App {
+  @apply text-center flex flex-col min-h-screen;
+}
+
+.App-header {
+  @apply bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen;
+}
+
+.sidebar {
+  @apply bg-orange-300 p-5 rounded-lg w-full md:w-1/4 lg:w-1/5;
+}
+
+.sidebar h3 {
+  @apply font-bold text-lg;
+}
+
+.sidebar ul {
+  @apply mt-4;
+}
+
+.sidebar ul li {
+  @apply mb-3 text-red-700;
+}
+
+.sidebar ul li.active {
+  @apply font-bold;
+}
+
+/* Keyframes for logo rotation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
